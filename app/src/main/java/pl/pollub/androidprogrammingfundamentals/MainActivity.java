@@ -21,13 +21,11 @@ public class MainActivity extends Activity {
         ExpandableListAdapter adapter = new ExpandableListAdapter(this, groups);
         listView.setAdapter(adapter);
     }
+
     public void createData() {
-        for (int j = 0; j < 5; j++) {
-            Group group = new Group("Item " + (j + 1));
-            for (int i = 0; i < 5; i++) {
-                group.children.add(new Item("Sub Item " + (i + 1), new Intent(this, MainActivity.class)));
-            }
-            groups.append(j, group);
-        }
+        Group lab01Group = new Group("Lab 01");
+        lab01Group.children.add(new Item("Hello world!", new Intent(this, Lab01HelloWorld.class)));
+
+        groups.append(0, lab01Group);
     }
 }
