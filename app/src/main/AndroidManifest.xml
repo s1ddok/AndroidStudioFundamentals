@@ -24,7 +24,8 @@
         <activity android:name=".Lab02LayoutAndEvents" />
         <activity android:name=".Lab02Resources" />
         <activity android:name=".Lab02RuntimeLayout" />
-        <activity android:name=".Lab02PopularControls"></activity>
+        <activity android:name=".Lab02PopularControls" />
+        <activity android:name=".NotificationView"></activity>
     </application>
 
 </manifest>

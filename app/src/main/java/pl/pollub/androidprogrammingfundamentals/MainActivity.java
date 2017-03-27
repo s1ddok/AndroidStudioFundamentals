@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
 
         Group lab03Group = new Group("Lab 03");
         lab03Group.children.add(new Item("Alert dialog", new Intent(this, Lab03Alerts.class)));
+        lab03Group.children.add(new Item("Notifications", new Intent(this, Lab03Notifications.class)));
         groups.append(2, lab03Group);
     }
 }
