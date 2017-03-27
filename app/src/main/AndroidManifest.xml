@@ -22,7 +22,8 @@
         <activity android:name=".Lab02Lifecycle" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".Lab02LayoutAndEvents" />
-        <activity android:name=".Lab02Resources"></activity>
+        <activity android:name=".Lab02Resources" />
+        <activity android:name=".Lab02RuntimeLayout"></activity>
     </application>
 
 </manifest>
