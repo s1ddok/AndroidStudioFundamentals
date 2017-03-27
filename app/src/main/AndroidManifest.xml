@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lab01HelloWorld" />
-        <activity android:name=".Lab03Alerts"></activity>
+        <activity android:name=".Lab03Alerts" />
+        <activity android:name=".Lab03Notifications" />
+        <activity android:name=".Lab02Lifecycle" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".Lab02LayoutAndEvents" />
+        <activity android:name=".Lab02Resources"></activity>
     </application>
 
 </manifest>
