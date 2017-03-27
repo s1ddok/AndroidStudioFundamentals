@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         lab02Group.children.add(new Item("Layout and Events", new Intent(this, Lab02LayoutAndEvents.class)));
         lab02Group.children.add(new Item("Resources", new Intent(this, Lab02Resources.class)));
         lab02Group.children.add(new Item("Runtime layout influence", new Intent(this, Lab02RuntimeLayout.class)));
+        lab02Group.children.add(new Item("Popular controls", new Intent(this, Lab02PopularControls.class)));
         groups.append(1, lab02Group);
 
         Group lab03Group = new Group("Lab 03");

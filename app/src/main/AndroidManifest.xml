@@ -23,7 +23,8 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".Lab02LayoutAndEvents" />
         <activity android:name=".Lab02Resources" />
-        <activity android:name=".Lab02RuntimeLayout"></activity>
+        <activity android:name=".Lab02RuntimeLayout" />
+        <activity android:name=".Lab02PopularControls"></activity>
     </application>
 
 </manifest>
