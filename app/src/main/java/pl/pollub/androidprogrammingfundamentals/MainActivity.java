@@ -1,15 +1,10 @@
 package pl.pollub.androidprogrammingfundamentals;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.SparseArray;
-import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +20,10 @@ public class MainActivity extends Activity {
     public void createData() {
         Group lab01Group = new Group("Lab 01");
         lab01Group.children.add(new Item("Hello world!", new Intent(this, Lab01HelloWorld.class)));
-
         groups.append(0, lab01Group);
+
+        Group lab03Group = new Group("Lab 03");
+        lab03Group.children.add(new Item("Alert dialog", new Intent(this, Lab03Alerts.class)));
+        groups.append(1, lab03Group);
     }
 }
