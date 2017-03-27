@@ -2,6 +2,7 @@ package pl.pollub.androidprogrammingfundamentals;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
@@ -17,14 +18,14 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main); createData();
         ExpandableListView listView = (ExpandableListView) findViewById(R.id.mainListView);
-        ExpandableListAdapter adapter = new ExpandableListAdapter( this, groups);
+        ExpandableListAdapter adapter = new ExpandableListAdapter(this, groups);
         listView.setAdapter(adapter);
     }
     public void createData() {
         for (int j = 0; j < 5; j++) {
             Group group = new Group("Item " + (j + 1));
             for (int i = 0; i < 5; i++) {
-                group.children.add("Sub Item " + (i + 1));
+                group.children.add(new Item("Sub Item " + (i + 1), new Intent(this, MainActivity.class)));
             }
             groups.append(j, group);
         }

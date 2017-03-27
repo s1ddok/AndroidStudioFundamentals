@@ -19,7 +19,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter { private f
         this.groups = groups;
         inflater = act.getLayoutInflater();
     }
-    @Override
+
     public Object getChild(int groupPosition, int childPosition) { return groups.get(groupPosition).children.get(childPosition);
     }
     @Override
@@ -27,15 +27,15 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter { private f
     }
     @Override
     public View getChildView(int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        final String children = (String) getChild(groupPosition, childPosition);
+        final Item children = (Item) getChild(groupPosition, childPosition);
         TextView text = null;
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.listrow_details, null); }
-        text = (TextView) convertView.findViewById(R.id.textView1); text.setText(children);
+        text = (TextView) convertView.findViewById(R.id.textView1); text.setText(children.title);
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, children,Toast.LENGTH_SHORT).show();
+                activity.startActivity(children.intent);
             } });
         return convertView;
     }
