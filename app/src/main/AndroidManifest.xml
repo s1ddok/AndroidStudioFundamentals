@@ -25,7 +25,9 @@
         <activity android:name=".Lab02Resources" />
         <activity android:name=".Lab02RuntimeLayout" />
         <activity android:name=".Lab02PopularControls" />
-        <activity android:name=".NotificationView"></activity>
+        <activity android:name=".NotificationView" />
+        <activity android:name=".Lab03ActivityDataTransfer" />
+        <activity android:name=".Lab03ActivityDataTransferSub"></activity>
     </application>
 
 </manifest>
