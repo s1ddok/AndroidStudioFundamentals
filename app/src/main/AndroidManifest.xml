@@ -36,7 +36,8 @@
         <activity android:name=".Lab03ActivityDataTransferSub" />
         <activity android:name=".Lab03ImagePicking" />
         <activity android:name=".Lab04Location" />
-        <activity android:name=".Lab04AvailableSensors"></activity>
+        <activity android:name=".Lab04AvailableSensors" />
+        <activity android:name=".Lab04Accelerometer"></activity>
     </application>
 
 </manifest>

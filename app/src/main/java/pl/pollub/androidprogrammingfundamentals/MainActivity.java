@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
         Group lab04Group = new Group("Lab 04");
         lab04Group.children.add(new Item("Location", new Intent(this, Lab04Location.class)));
         lab04Group.children.add(new Item("Available Sensors", new Intent(this, Lab04AvailableSensors.class)));
+        lab04Group.children.add(new Item("Accelerometer", new Intent(this, Lab04Accelerometer.class)));
         groups.append(3, lab04Group);
     }
 }
