@@ -7,6 +7,8 @@
     <uses-permission
         android:name="android.permission.ACCESS_COARSE_LOCATION"
         android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver android:name=".SMSReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +45,8 @@
         <activity android:name=".Lab03ImagePicking" />
         <activity android:name=".Lab04Location" />
         <activity android:name=".Lab04AvailableSensors" />
-        <activity android:name=".Lab04Accelerometer"></activity>
+        <activity android:name=".Lab04Accelerometer" />
+        <activity android:name=".Lab05SMS"></activity>
     </application>
 
 </manifest>

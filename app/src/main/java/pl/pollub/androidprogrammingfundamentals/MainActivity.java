@@ -42,5 +42,9 @@ public class MainActivity extends Activity {
         lab04Group.children.add(new Item("Available Sensors", new Intent(this, Lab04AvailableSensors.class)));
         lab04Group.children.add(new Item("Accelerometer", new Intent(this, Lab04Accelerometer.class)));
         groups.append(3, lab04Group);
+
+        Group lab05Group = new Group("Lab 05");
+        lab05Group.children.add(new Item("Send SMS", new Intent(this, Lab05SMS.class)));
+        groups.append(4, lab05Group);
     }
 }
