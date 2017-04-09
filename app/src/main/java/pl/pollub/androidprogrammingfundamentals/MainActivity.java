@@ -46,6 +46,7 @@ public class MainActivity extends Activity {
         Group lab05Group = new Group("Lab 05");
         lab05Group.children.add(new Item("Play sound", new Intent(this, Lab05SoundPlayer.class)));
         lab05Group.children.add(new Item("Media player", new Intent(this, Lab05MediaPlayer.class)));
+        lab05Group.children.add(new Item("Record audio", new Intent(this, Lab05RecordAudio.class)));
         lab05Group.children.add(new Item("Send SMS", new Intent(this, Lab05SMS.class)));
         groups.append(4, lab05Group);
     }

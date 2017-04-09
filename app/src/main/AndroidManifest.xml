@@ -9,6 +9,8 @@
         android:maxSdkVersion="22" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -52,7 +54,8 @@
         <activity android:name=".Lab04Accelerometer" />
         <activity android:name=".Lab05SMS" />
         <activity android:name=".Lab05SoundPlayer" />
-        <activity android:name=".Lab05MediaPlayer"></activity>
+        <activity android:name=".Lab05MediaPlayer" />
+        <activity android:name=".Lab05RecordAudio"></activity>
     </application>
 
 </manifest>
