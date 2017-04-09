@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
         lab03Group.children.add(new Item("Alert dialog", new Intent(this, Lab03Alerts.class)));
         lab03Group.children.add(new Item("Notifications", new Intent(this, Lab03Notifications.class)));
         lab03Group.children.add(new Item("Data transfer", new Intent(this, Lab03ActivityDataTransfer.class)));
+        lab03Group.children.add(new Item("Image picking", new Intent(this, Lab03ImagePicking.class)));
         groups.append(2, lab03Group);
     }
 }

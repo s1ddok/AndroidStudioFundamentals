@@ -27,7 +27,8 @@
         <activity android:name=".Lab02PopularControls" />
         <activity android:name=".NotificationView" />
         <activity android:name=".Lab03ActivityDataTransfer" />
-        <activity android:name=".Lab03ActivityDataTransferSub"></activity>
+        <activity android:name=".Lab03ActivityDataTransferSub" />
+        <activity android:name=".Lab03ImagePicking"></activity>
     </application>
 
 </manifest>
