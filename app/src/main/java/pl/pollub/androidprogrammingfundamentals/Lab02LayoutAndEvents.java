@@ -1,12 +1,13 @@
 package pl.pollub.androidprogrammingfundamentals;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Lab02LayoutAndEvents extends AppCompatActivity {
+public class Lab02LayoutAndEvents extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
