@@ -58,7 +58,8 @@
         <activity android:name=".Lab05RecordAudio" />
         <activity android:name=".Lab05TTS" />
         <activity android:name=".Lab06DragNDrop" />
-        <activity android:name=".Lab06PopupMenu"></activity>
+        <activity android:name=".Lab06PopupMenu" />
+        <activity android:name=".Lab06ContextMenu"></activity>
     </application>
 
 </manifest>

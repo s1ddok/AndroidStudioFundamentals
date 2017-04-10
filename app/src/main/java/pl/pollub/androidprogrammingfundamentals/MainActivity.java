@@ -52,10 +52,8 @@ public class MainActivity extends Activity {
         groups.append(4, lab05Group);
 
         Group lab06Group = new Group("Lab 06");
-        lab05Group.children.add(new Item("Play sound", new Intent(this, Lab05SoundPlayer.class)));
-        lab05Group.children.add(new Item("Media player", new Intent(this, Lab05MediaPlayer.class)));
+        lab06Group.children.add(new Item("ContextMenu", new Intent(this, Lab06ContextMenu.class)));
         lab06Group.children.add(new Item("Pop-up menu", new Intent(this, Lab06PopupMenu.class)));
-        lab05Group.children.add(new Item("Te", new Intent(this, Lab05TTS.class)));
         lab06Group.children.add(new Item("Drag-N-Drop", new Intent(this, Lab06DragNDrop.class)));
         groups.append(5, lab06Group);
     }
